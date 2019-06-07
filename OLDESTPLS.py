@@ -109,7 +109,7 @@ if __name__ =="__main__":
 
 
     #library.get_book_by_author('TestAuthor') #Searching for a book (By author).
-    #library.get_book_by_title('Fairy tales') #Searching for a book (By title).
+    library.get_book_by_title('Fairy tales') #Searching for a book (By title).
     loanbooks.rent_book("Bengt","The Decameron") #Making a book loan for an available book item.
     #customerlist.add_customer(['21',  'male',  'Dutch',  'Daan',  'Nekeman',  'Straat 1',  '9461 JE',  'Gieten',  'GulserenWilligenburg@teleworm.us',  'Ressoare',  '06-92433659']) #Adding new customers.
     #customerlist.add_customer(['22',  'male',  'Dutch',  'Danyel',  'Fijten',  'Straat 2',  '9461 JE',  'Gieten',  'GulserenWilligenburg@teleworm.us',  'Ressoare',  '06-92433659'])
