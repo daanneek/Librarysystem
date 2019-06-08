@@ -54,7 +54,7 @@ class Library:
             writer.writerows(toCSV)
 
     def backup_loans(self, customerlist):
-        with open('loansbackup.json', 'w') as outfile:
+        with open('loans.json', 'w') as outfile:
             json.dump(customerlist, outfile)
 
     def check_person(self, name):
