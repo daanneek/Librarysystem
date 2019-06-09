@@ -1,9 +1,9 @@
 import json
 import csv
-import numbers
 import tkinter as tk
 from pprint import *
 class Library:
+
 
     def __init__(self):
         self.book_list = []
@@ -28,11 +28,24 @@ class Library:
     def get_customers(self):
         """Returns all information in the customer list."""
         for person in self.customer_list:
-            print(person[3], person[0])
+            print("Customer's name " + str(person[3]) + ".ID[" + str(person[0]) + "]")
 
+    @staticmethod
+    def get_customer_ID(name):
+        for person in Library.customer_list:
+            if person[3] == str(name):
+                print("Customer's name " + person[3] + " " + person[4] + " with ID[" + person[0] + "]")
+                break
+        else:
+            print(name + "was not found! Did you spell your name correctly?")
+    @staticmethod
+    def getter3():
+        something = inp22.get()
+        Library.get_customer_ID(something)
 
     def get_loans_list(self):
         """Returns all information in the loans list"""
+        print("List of all book loans, format [Loan ID, Customer ID, Book Title]")
         print(self.book_loans)
         loanAdministration.save_loans(Library.book_loans)
 
@@ -60,6 +73,7 @@ class Library:
             Administration.save_library(Library.book_list)
         else:
             print("Book title is already present in the book database!")
+
     @staticmethod
     def getAddBook():
         author = inp3.get()
@@ -70,31 +84,41 @@ class Library:
         pages = inp8.get()
         title = inp9.get()
         year = inp10.get()
-        window.update()
         Library.add_book_to_library(author, country, image, language, link, pages, title, year)
 
-    def add_customer(self, number, gender, language, name, surname, address, zipcode, email, username, phonenumber):
-        """A class that adds a customer to the library's register. This does NOT add the customer to the csv file."""
-        self.customer_list.append([number, gender, language, name, surname, address, zipcode, email, username, phonenumber])
+    @staticmethod
+    def add_customer(number, gender, language, name, surname, address, zipcode, email, username, phonenumber):
+        Library.customer_list.append([number, gender, language, name, surname, address, zipcode, email, username, phonenumber])
         print("Person was added succesfully")
         Administration.save_customers(Library.customer_list)
 
     @staticmethod
-    def check_number(number):
-        for person in Library.customer_list:
-            if person[0] == str(number):
-                return True
+    def searchlist(list):
+        x = int(max(list)) + 1
+        return x
 
     @staticmethod
     def generateNumber():
-        Number = 0
-        while Library.check_number(Number):
-            Number = Number + 1
+        listt = []
+        for customers in Library.customer_list:
+            x = customers[0]
+            listt.append(int(x))
+        return Library.searchlist(listt)
+
+    @staticmethod
+    def removeCustomer(Id):
+        if Library.check_person(Id):
+            newlist = [i for i in Library.customer_list if i[0] != str(Id)]
+            print("Person with ID: " + Id + " was removed correctly.")
+            Library.customer_list = newlist
+            Administration.save_customers(newlist)
         else:
-            return Number
-#########################################################################################################
-                    # FIX CHECK NUMBER NIET OMHOOG ALS PROGRAMMA AANBLIJFT!!!!! #
-#########################################################################################################
+            print("ID is not present in the customer register!")
+
+    @staticmethod
+    def getter4():
+        something = inp23.get()
+        Library.removeCustomer(something)
 
     @staticmethod
     def getAddCustomer():
@@ -118,12 +142,12 @@ class Library:
         else:
             print("Book named " + title +" does not exist(yet)!")
 
-    def check_person(self, name):
+    def check_person(self, id):
         """Takes the name of a customer and checks if the person exists in the customer list."""
-        if name in [j for i in self.customer_list for j in i]:
+        if str(id) in [j for i in self.customer_list for j in i]:
             return True
         else:
-            print(name + " does not exist in our database!")
+            print("Person with ID: " + id + " does not exist in our database!")
 
     def check_bookloans(self, title):
         """Takes the title of a book and checks if it exists in the book_loans list."""
@@ -147,29 +171,29 @@ class Library:
         else:
             return Id
 
-    def loan(self, name, title):
+    def loan(self, ID, title):
         """Loans a book to a person and checks if the person and book exists, weather the book is already loaned out."""
-        if self.check_book(title) and self.check_person(name) and not self.check_bookloans(title):
+        if self.check_book(title) and self.check_person(ID) and not self.check_bookloans(title):
             book = str(title)
-            person = str(name)
+            person = str(ID)
             loanID = Library.generateId()
             loan = [loanID, person, book]
             self.book_loans.append(loan)
-            print("Loan was added. Customer "+ name + " loaned book " + title + ".")
+            print("Loan was added. Customer " + ID + " loaned book " + title + ".")
         else:
             print("Loan was not added succesfully, the book has already been loaned out!")
 
 
     @staticmethod
     def getLoan():
-        name = inp1.get()
+        id = inp1.get()
         title = inp2.get()
-        Library.loan(name, title)
+        Library.loan(id, title)
 
     @staticmethod
     def removeLoanById(Id):
         if Library.check_id(Id):
-            Library.book_loans =  [i for i in Library.book_loans if i[0] != Id]
+            Library.book_loans = [i for i in Library.book_loans if i[0] != Id]
             return Library.book_loans
         else:
             print("ID is not present in the book loans register!")
@@ -216,7 +240,6 @@ class Administration(Library):
             writer = csv.writer(f)
             writer.writerows(toCSV)
 
-
     @staticmethod
     def backup_library(library):
         with open('bookssetbackup.json', 'w') as outfile:
@@ -233,6 +256,7 @@ class Administration(Library):
 
     @staticmethod
     def load_customers_from_backup():
+        Library.customer_list = []
         """takes a csv backup file and loads it into customer list."""
         with open('FakeNameSetbackup.csv', 'rt', encoding="utf-8-sig", newline='') as f:
             csv_reader = csv.reader(f)
@@ -273,12 +297,6 @@ if __name__ == "__main__":
     # Initializing the Library
     Library = Library()
     Library.import_data()
-    #Administration.load_customers_from_backup()            # Add this line to read from a backed-up customer list.
-    #Administration.load_books_from_backup()                # Add this line to read from a backed-up book list.
-    #Administration.load_loans_from_backup()                # Add this line to read from a backed-up loans list.
-
-    # Authors.get_all_authors_books(Library)                 # Puts every author with their respective book in a list, "unknown" authors excluded
-
 
 ######################################################################################################################################
                                                 #   GUI   #
@@ -286,15 +304,14 @@ if __name__ == "__main__":
 
 
     window = tk.Tk()
-    window.geometry("1580x450")
+    window.geometry("1580x500")
     window.title("Public library system!")
     window.configure(background="gray")
-
 
     labelgetbookbytitle = tk.Label(window, text="Give the title, author, or country of origin of the book you want to search for:")
     labelgetbookbytitle.grid(row=0, column=0)
     inp = tk.Entry(window)
-    inp.grid(row=0, column=1)
+    inp.grid(row=0, column=4)
     button1 = tk.Button(text="Click to search for this book!", command=lambda: Library.getter(), width = 40 )
     button1.grid(row=0, column=6)
 
@@ -354,6 +371,19 @@ if __name__ == "__main__":
 
     inp21=tk.Entry(window)
     inp21.grid(row=10,column = 4)
+
+    button5 = tk.Button(text="Look up your customer id by name.", command=lambda: Library.getter3(), width=40)
+    button5.grid(row=14, column=6)
+
+    inp22=tk.Entry(window)
+    inp22.grid(row=14,column = 4)
+
+    button6 = tk.Button(text="Remove a customer with their ID.", command=lambda: Library.getter4(), width=40)
+    button6.grid(row=15, column=6)
+
+    inp23=tk.Entry(window)
+    inp23.grid(row=15,column = 4)
+
     buttonremoveloans = tk.Button(text="Remove a loan with its given ID", command=lambda: Library.getLoan2(), width=40).grid(row=10, column=6)
     button_all_books = tk.Button(text="Print all book titles in the catalog.", command=lambda: Catalog.get_all_books(), width = 40).grid(row=1, column=6)
     buttonallcustomers = tk.Button(text="Print names and id's of all customers.", command=lambda: Library.get_customers(), width = 40).grid(row=2, column=6)
@@ -361,7 +391,7 @@ if __name__ == "__main__":
     buttonbackupcostumers = tk.Button(text="Backup the customer list into a seperate file.", command=lambda: Administration.backup_customers(Library.customer_list), width = 40).grid(row=11, column=6)
     buttonbackupbooks = tk.Button(text="Backup the books list into a seperate file.", command=lambda: Administration.backup_library(Library.book_list), width = 40).grid(row=12, column=6)
     buttonloans = tk.Button(text="Backup the loans list into a seperate file.", command=lambda: loanAdministration.backup_loans(Library.book_loans), width = 40).grid(row=13, column=6)
-    # buttonloadcostumers = tk.Button(text="Load a backup file as the customer list.", command=lambda: Administration.load_customers_from_backup(), width = 40).grid(row=14, column=6)
-    # buttonloadupbooks = tk.Button(text="Load a backup file as the book list.", command=lambda: Administration.load_books_from_backup(), width = 40).grid(row=15, column=6)
-    # buttonloadloans = tk.Button(text="Load a backup file as the loan list.", command=lambda: loanAdministration.load_loans_from_backup(), width = 40).grid(row=16, column=6)
+    buttonloadcostumers = tk.Button(text="Load a backup file as the customer list.", command=lambda: Administration.load_customers_from_backup(), width = 40).grid(row=16, column=6)
+    buttonloadupbooks = tk.Button(text="Load a backup file as the book list.", command=lambda: Administration.load_books_from_backup(), width = 40).grid(row=17, column=6)
+    buttonloadloans = tk.Button(text="Load a backup file as the loan list.", command=lambda: loanAdministration.load_loans_from_backup(), width = 40).grid(row=18, column=6)
     window.mainloop()

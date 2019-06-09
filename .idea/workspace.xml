@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c30cac5-0669-4a43-ac50-415f17ad33d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/loans.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ACTUALPLS.py" beforeDir="false" afterPath="$PROJECT_DIR$/ACTUALPLS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FakeNameSet.csv" beforeDir="false" afterPath="$PROJECT_DIR$/FakeNameSet.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FakeNameSetbackUp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/FakeNameSetbackUp.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLDPLS.py" beforeDir="false" afterPath="$PROJECT_DIR$/OLDPLS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booksset1.json" beforeDir="false" afterPath="$PROJECT_DIR$/booksset1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookssetbackup.json" beforeDir="false" afterPath="$PROJECT_DIR$/bookssetbackup.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loansbackup.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans.json" beforeDir="false" afterPath="$PROJECT_DIR$/loans.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/testfile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,25 +23,10 @@
         <state>
           <leaf>
             <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/FakeNameSet.csv">
-                <provider editor-type-id="csv-table-editor">
-                  <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-                </provider>
-                <provider selected="true" editor-type-id="csv-text-editor">
-                  <state relative-caret-position="442">
-                    <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/FakeNameSetbackUp.csv">
-                <provider editor-type-id="csv-table-editor">
-                  <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-                </provider>
-                <provider selected="true" editor-type-id="csv-text-editor">
-                  <state relative-caret-position="374">
-                    <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+              <entry file="file://$PROJECT_DIR$/testfile.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="238">
+                    <caret line="14" selection-start-line="14" selection-end-line="29" selection-end-column="33" />
                   </state>
                 </provider>
               </entry>
@@ -59,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ACTUALPLS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="105" column="30" lean-forward="true" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+            <state relative-caret-position="343">
+              <caret line="299" column="27" selection-start-line="299" selection-start-column="27" selection-end-line="299" selection-end-column="27" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -69,10 +51,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bookssetbackup.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="94" lean-forward="true" selection-start-column="94" selection-end-column="94" />
+        <entry file="file://$PROJECT_DIR$/FakeNameSet.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FakeNameSetbackUp.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -81,7 +78,16 @@
         <entry file="file://$PROJECT_DIR$/booksset1.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="1" selection-end-column="1" />
+              <caret column="22832" selection-start-column="22832" selection-end-column="22832" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bookssetbackup.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23010" selection-start-column="23010" selection-end-column="23010" />
             </state>
           </provider>
         </entry>
@@ -90,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/loans.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="67" selection-start-column="67" selection-end-column="67" />
+              <caret column="99" selection-start-column="99" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -98,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OLDESTPLS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="1632">
               <caret line="99" column="39" lean-forward="true" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -128,15 +134,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -148,34 +145,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>The Stranger</find>
-      <find>pride and preju</find>
-      <find>Albert Camus</find>
-      <find>Paul Celan</find>
-      <find>Miguel de Cervantes</find>
-      <find>Geoffrey Chaucer</find>
-      <find>get_all_authors</find>
-      <find>get_cus</find>
-      <find>get_all_books</find>
-      <find>get_all_books()</find>
-      <find>text</find>
-      <find>get_book_by_title</find>
       <find>Nigeria</find>
-      <find>del</find>
       <find>Colombia</find>
       <find>backup</find>
       <find>save</find>
-      <find>check_person</find>
       <find>loansbackup</find>
       <find>book title ia</find>
       <find>save_loans</find>
-      <find>getLoan2</find>
       <find>Button</find>
       <find>does not e</find>
       <find>[</find>
-      <find>get_customers</find>
       <find>get_cuisw</find>
       <find>save_customers</find>
+      <find>add_customer</find>
+      <find>getaddcustomer</find>
+      <find>window.update</find>
+      <find>get_loans_list</find>
+      <find>getAddCustomer</find>
+      <find>for</find>
+      <find>remove</find>
+      <find>del</find>
+      <find>getLoan2</find>
+      <find>check_person</find>
+      <find>save_library</find>
+      <find>get_all_books</find>
+      <find>getAddBook</find>
+      <find>get_customers</find>
+      <find>getter</find>
+      <find>customer_id</find>
+      <find>check_book</find>
+      <find>remove_book</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,13 +189,13 @@
         <option value="$PROJECT_DIR$/da.py" />
         <option value="$PROJECT_DIR$/OLDPLS.py" />
         <option value="$PROJECT_DIR$/OLDESTPLS.py" />
-        <option value="$PROJECT_DIR$/bookssetbackup.json" />
         <option value="$PROJECT_DIR$/loansbackup.json" />
         <option value="$PROJECT_DIR$/test2.py" />
-        <option value="$PROJECT_DIR$/booksset1.json" />
-        <option value="$PROJECT_DIR$/FakeNameSetbackUp.csv" />
         <option value="$PROJECT_DIR$/testfile.py" />
+        <option value="$PROJECT_DIR$/FakeNameSetbackUp.csv" />
         <option value="$PROJECT_DIR$/FakeNameSet.csv" />
+        <option value="$PROJECT_DIR$/bookssetbackup.json" />
+        <option value="$PROJECT_DIR$/booksset1.json" />
         <option value="$PROJECT_DIR$/ACTUALPLS.py" />
       </list>
     </option>
@@ -213,7 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,6 +223,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -404,7 +403,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.27349526" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28933474" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33044422" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32946146" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -416,25 +415,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08385417" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.27349526" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2280887" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33044422" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../Library_System (1)/PLS.py" />
@@ -444,6 +424,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Class Diagram.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loans.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="99" selection-start-column="99" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OLDESTPLS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="99" column="39" lean-forward="true" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loans_backup.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" lean-forward="true" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OLDPLS.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -455,65 +466,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/booksset1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loans.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="67" selection-start-column="67" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OLDESTPLS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="99" column="39" lean-forward="true" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FakeNameSetbackUp.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bookssetbackup.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="94" lean-forward="true" selection-start-column="94" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loans_backup.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" lean-forward="true" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="29" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -522,15 +478,39 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeNameSetbackUp.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bookssetbackup.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23010" selection-start-column="23010" selection-end-column="23010" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booksset1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22832" selection-start-column="22832" selection-end-column="22832" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ACTUALPLS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="105" column="30" lean-forward="true" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+        <state relative-caret-position="343">
+          <caret line="299" column="27" selection-start-line="299" selection-start-column="27" selection-end-line="299" selection-end-column="27" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
